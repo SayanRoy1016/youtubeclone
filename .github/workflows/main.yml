@@ -26,8 +26,9 @@ jobs:
         #  name: Build
          # path: release.zip
       - run: |
-          zip -r app.zip . -i build/static/js/*.js
-          zip -r app.zip . -i build/static/css/*.css
+          zip app.zip build -r
+          #zip -r app.zip . -i build/static/js/*.js
+          #zip -r app.zip . -i build/static/css/*.css
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4

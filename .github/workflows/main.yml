@@ -53,8 +53,8 @@ jobs:
         with:
           name: node-app
 
-      - name: Unzip artifact for deployment
-        run: unzip app.zip
+      #- name: Unzip artifact for deployment
+       # run: unzip app.zip
       #- run: |
        #   unzip Build.zip
         #  rm Build.zip

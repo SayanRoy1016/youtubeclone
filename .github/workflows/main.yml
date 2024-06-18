@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: app.zip
+          #path: app.zip
       
 
   release:
@@ -65,7 +65,7 @@ jobs:
         with:
           app-name: ${{ secrets.WEB_APP_NAME }}
           slot-name: 'Production'
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPO_NAME }}:${{ github.sha }}
+          #images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPO_NAME }}:${{ github.sha }}
           publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}
           package: .
 
